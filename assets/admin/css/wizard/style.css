@@ -1,0 +1,51 @@
+.admin_page_wplogger-wizard #adminmenumain,
+.admin_page_wplogger-wizard #wpadminbar,
+.admin_page_wplogger-wizard #wpfooter {
+    display:none !important;
+}
+
+.admin_page_wplogger-wizard #wpcontent {
+    margin-left: 0;
+    padding-left: 20px;
+}
+
+.admin_page_wplogger-wizard .plugin-logo img {
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.admin_page_wplogger-wizard .plugin-logo h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.admin_page_wplogger-wizard .wizard .actions li a {
+    background-color: #34B1AA;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.admin_page_wplogger-wizard .wizard .actions ul {
+    position: relative;
+}
+
+.admin_page_wplogger-wizard .wizard .actions ul li:nth-child(4) {
+    position: absolute;
+    left:0;
+    top:0;
+    margin: 0;
+}
+
+.admin_page_wplogger-wizard .wizard .actions ul li:nth-child(4) a {
+    background-color: #ffaf00;
+}
+
+.admin_page_wplogger-wizard .wizard .steps > ul li .bd-wizard-step-icon {
+    font-size: 18px;
+}

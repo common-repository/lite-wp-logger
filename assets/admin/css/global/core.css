@@ -1,0 +1,10 @@
+#toplevel_page_wplogger .wp-menu-image img {
+    width: 24px;
+    padding-top: 7px;
+}
+
+[class^='wp-logger'] .fs-secure-notice,
+[class*=' wp-logger'] .fs-secure-notice {
+    display: none;
+}
+

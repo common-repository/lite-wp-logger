@@ -1,0 +1,213 @@
+.post-type-wplogs .tablenav .actions select {
+    max-width: 120px;
+}
+.post-type-wplogs th#log_importance {
+    width: 100px;
+    text-align: center;
+}
+
+.post-type-wplogs .log-severity {
+    display: block;
+    text-align: center;
+}
+.post-type-wplogs .log-severity i:before {
+    height: 28px;
+    width: 28px;
+    font-size: 28px;
+}
+.post-type-wplogs .severity-low {
+    color: #64DD17;
+}
+.post-type-wplogs .severity-high {
+    color: #F44336;
+}
+.post-type-wplogs .severity-urgent {
+    color: #9C27B0;
+}
+.post-type-wplogs .severity-medium {
+    color: #FFC400;
+}
+
+.post-type-wplogs .log_user {
+    line-height: 16px;
+    font-size: 12px;
+}
+.post-type-wplogs .log_user a {
+    display: block;
+}
+.post-type-wplogs .log-user-avatar {
+    float: left;
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.post-type-wplogs .log-details-block {
+    overflow: hidden;
+}
+
+.post-type-wplogs .log-details-btn {
+    float: right;
+}
+
+.post-type-wplogs .log-details-btn i:before {
+    height: 24px;
+    width: 24px;
+    font-size: 24px;
+    color: #666;
+}
+
+.post-type-wplogs .log-details-viewer-back {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: 999999;
+    background-color: rgba(0,0,0,0.5);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.post-type-wplogs .log-details-viewer-back.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.post-type-wplogs .log-details-viewer {
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000001;
+    border: 1px solid #c3c4c7;
+    background-color: #fff;
+    box-shadow: 0 1px 10px rgba(0,0,0,.14);
+    width: 650px;
+    max-width: calc(100vw - 20px);
+    min-height: 100px;
+    overflow-y: auto;
+    max-height: calc(100vh - 20px);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in;
+    -moz-transition: opacity 0.3s ease-in;
+    transition: opacity 0.3s ease-in;
+}
+
+.post-type-wplogs .log-details-viewer.loading {
+    background: url('../../../../../../../wp-admin/images/loading.gif') no-repeat center center #fff;
+    width: 50px;
+    min-height: 50px;
+}
+
+.post-type-wplogs .log-details-viewer.loading .title {
+    display: none;
+}
+
+.post-type-wplogs .log-details-viewer.show {
+    visibility: visible;
+    opacity: 1;
+    transform:translate(-50%, -50%);
+}
+
+.post-type-wplogs .log-details-viewer .title {
+    border-bottom:1px solid #c3c4c7;
+    line-height: 36px;
+    padding: 0 10px;
+}
+
+.post-type-wplogs .log-details-viewer .title i {
+    float: right;
+}
+
+.post-type-wplogs .log-details-viewer .title i:before {
+    line-height: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.post-type-wplogs .log-details-viewer .title h4 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.post-type-wplogs .log-details-viewer .content {
+    padding:10px;
+}
+
+.post-type-wplogs .log-details-viewer .content .log-details {
+    margin-top: 5px;
+    height: 350px;
+    overflow-y: auto;
+    background-color: #f4f5f6;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.post-type-wplogs .log-details-viewer .content .log-details .log-details-inner {
+    padding: 5px;
+}
+
+.post-type-wplogs .log-details-viewer .content .log-details code {
+    padding: 0;
+    font-size: 11px;
+    line-height: 16px;
+    background: none;
+}
+
+.post-type-wplogs .log-auto-loading {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: 999999;
+    background-color: rgba(0,0,0,0.5);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.post-type-wplogs .log-auto-loading.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.post-type-wplogs .log-auto-loading span.loading-img {
+    background: url('../../../../../../../wp-admin/images/loading.gif') no-repeat center center #fff;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    box-shadow: 0 1px 10px rgba(0,0,0,.14);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.post-type-wplogs #log_details {
+    width: 42%;
+}
+
+.post-type-wplogs .logger-varlight {
+    border-radius: 3px;
+    background-color: #E9F9F8;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.post-type-wplogs .logger-varlight .varlight-inner {
+    padding: 5px;
+    overflow: hidden;
+}
